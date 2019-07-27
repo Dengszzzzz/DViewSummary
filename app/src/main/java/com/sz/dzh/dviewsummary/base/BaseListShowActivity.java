@@ -8,7 +8,6 @@ import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.sz.dzh.dviewsummary.R;
-import com.sz.dzh.dviewsummary.adapter.BaseListAdapter;
 import com.sz.dzh.dviewsummary.bean.ClazzBean;
 
 import java.util.ArrayList;

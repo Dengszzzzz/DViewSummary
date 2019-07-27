@@ -8,9 +8,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.sz.dzh.dviewsummary.adapter.BaseListAdapter;
+import com.sz.dzh.dviewsummary.base.BaseListAdapter;
 import com.sz.dzh.dviewsummary.base.BaseActivity;
 import com.sz.dzh.dviewsummary.bean.ClazzBean;
+import com.sz.dzh.dviewsummary.module.ConstraintActivity;
+import com.sz.dzh.dviewsummary.module.TestActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,8 +42,8 @@ public class MainActivity extends BaseActivity {
     }
 
     private void initData(){
-        //addClazzBean("RxJava2 基础知识", RxJStudyListActivity.class);
-       // addClazzBean("RxJava2 实际应用场景", RxUseListActivity.class);
+        addClazzBean("ConstraintLayout", ConstraintActivity.class);
+        addClazzBean("xxxx", TestActivity.class);
     }
 
     private void initView(){

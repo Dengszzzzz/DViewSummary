@@ -1,4 +1,4 @@
-package com.sz.dzh.dviewsummary.adapter;
+package com.sz.dzh.dviewsummary.base;
 
 import android.support.annotation.Nullable;
 
