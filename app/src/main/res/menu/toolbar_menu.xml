@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+    1、Toolbar中的action按钮只会显示图标，菜单中的action按钮只会显示文字
+
+    2、Toolbar 没有直接提对供menu设置方法，需要通过Theme来调整Menu样式
+
+    3、showAsAction
+    用法是app:showAsAction，且要搭配v7库的toolbar使用，不然无法显示在toolbar上。
+    ifRoom  表示在屏幕空间足够的情况下显示在Toolbar中，不够的话就显示在菜单中
+    never   表示永远不显示在Toolbar中，而是一直显示在菜单中
+    always  表示永远显示在Toolbar中，如果屏幕空间不够则不显示
+
+    4、title，显示图标的情况下，长按会Toast这个title
+    -->
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/share_icon"
+        android:title="分享"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_collect"
+        android:icon="@drawable/collect_icon"
+        android:title="收藏"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_go_shop"
+        android:title="商城"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_go_cart"
+        android:title="购物车"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_go_setting"
+        android:title="设置"
+        app:showAsAction="never"/>
+
+</menu>

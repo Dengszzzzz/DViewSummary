@@ -5,6 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
     <!--1、相对定位
         都是：layout_constraintXXX_toYYYof 这样的，容易理解
         layout_constraintBaseline_toBaselineOf 文本内容基线对其-->
@@ -14,8 +18,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
         android:text="1、相对定位"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
     <TextView
         android:id="@+id/tv_1_1"

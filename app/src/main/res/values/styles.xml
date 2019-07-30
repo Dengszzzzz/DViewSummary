@@ -1,12 +1,50 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- 设置为NoActionBar -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <!--  *********************       ToolBar相关     *************************   -->
+    <!--设置ToolBar 弹窗menu样式，Dark是黑暗模式(黑底白字)，Light是光亮模式(白底黑字)  -->
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <!--弹出菜单的样式-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <!--Menu item 高度 这里不需要指定style 可直接指定-->
+        <item name="android:listPreferredItemHeightSmall">40dp</item>
+        <!-- 分隔线 -->
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <!-- 设置menu 文字大小颜色 -->
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">40dp</item>
+    </style>
+
+    <!-- 右边三个白点图标 -->
+    <style name="OverflowButtonStyle" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/more_icon</item>
+    </style>
+
+    <!-- 弹出菜单栏 -->
+    <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+       <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <!--弹出层背景，可以设置颜色，drawable等 -->
+        <item name="android:popupBackground">@drawable/toolbar_menu_bg</item>
+        <!-- 竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">5dp</item>
+    </style>
+
+    <!-- 分隔线 -->
+    <style name="PopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">#000</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+    <!--  *********************       ToolBar相关     *************************   -->
+
 
 
     <style name="myTextView">

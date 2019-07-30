@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:navigationIcon="@drawable/back_icon"
+        android:logo="@mipmap/ic_launcher"
+        android:logoDescription=""
+        android:title="标题"
+        android:titleTextColor="@color/white"
+        android:subtitle="子标题"
+        android:subtitleTextColor="@color/white"
+        android:titleMarginStart="90dp"
+        />
+
+
+
+
+    <Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"
+        android:navigationIcon="@drawable/back_icon">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+
+
+    </Toolbar>
+
+
+    <Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"
+        android:navigationIcon="@drawable/back_icon">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Menu 非v7包Toolbar"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+
+    </Toolbar>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/back_icon" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Menu v7包Toolbar"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/ToolbarPopupTheme"
+        app:navigationIcon="@drawable/back_icon" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="自定义Menu的样式"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+</LinearLayout>

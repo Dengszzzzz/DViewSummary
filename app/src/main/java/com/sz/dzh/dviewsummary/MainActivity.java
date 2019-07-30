@@ -11,8 +11,10 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.sz.dzh.dviewsummary.base.BaseListAdapter;
 import com.sz.dzh.dviewsummary.base.BaseActivity;
 import com.sz.dzh.dviewsummary.bean.ClazzBean;
+import com.sz.dzh.dviewsummary.module.CardViewActivity;
 import com.sz.dzh.dviewsummary.module.ConstraintActivity;
 import com.sz.dzh.dviewsummary.module.TestActivity;
+import com.sz.dzh.dviewsummary.module.ToolBarActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +45,8 @@ public class MainActivity extends BaseActivity {
 
     private void initData(){
         addClazzBean("ConstraintLayout", ConstraintActivity.class);
-        addClazzBean("xxxx", TestActivity.class);
+        addClazzBean("ToolBar", ToolBarActivity.class);
+        addClazzBean("CardView、SwipeRefreshLayout", CardViewActivity.class);
     }
 
     private void initView(){

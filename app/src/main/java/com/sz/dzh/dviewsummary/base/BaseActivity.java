@@ -6,8 +6,12 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
+
 import com.socks.library.KLog;
+import com.sz.dzh.dviewsummary.R;
 import com.sz.dzh.dviewsummary.utils.AppManager;
 
 import java.lang.reflect.ParameterizedType;
@@ -18,6 +22,8 @@ import java.lang.reflect.ParameterizedType;
 public abstract class BaseActivity extends AppCompatActivity {
 
     protected String TAG = getClass().getSimpleName();
+    protected Toolbar mToolbar;
+    protected TextView mTvTitle;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,6 +45,16 @@ public abstract class BaseActivity extends AppCompatActivity {
         AppManager.getAppManager().finishActivity(this);
     }
 
+    /**
+     * 标题栏
+     * @param title  标题
+     */
+    protected void initToolBar(String title){
+        mToolbar = findViewById(R.id.toolbar);
+        mToolbar.setNavigationOnClickListener(view -> finish());
+        mTvTitle = findViewById(R.id.tv_title);
+        mTvTitle.setText(title);
+    }
 
 
 
