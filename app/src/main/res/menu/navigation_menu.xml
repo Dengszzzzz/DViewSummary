@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="个人操作" >
+
+        <menu>
+            <item
+                android:id="@+id/action_share"
+                android:icon="@drawable/share_icon"
+                android:title="分享" />
+
+            <item
+                android:id="@+id/action_collect"
+                android:icon="@drawable/collect_icon"
+                android:title="收藏"/>
+        </menu>
+
+    </item>
+
+
+    <!--如果想要分割线，给group设置id，android:checkableBehavior="single 是指单选-->
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_go_shop"
+            android:title="商城"/>
+        <item
+            android:id="@+id/action_go_cart"
+            android:title="购物车"/>
+
+    </group>
+
+
+    <item
+        android:id="@+id/action_go_setting"
+        android:title="设置"/>
+
+
+</menu>

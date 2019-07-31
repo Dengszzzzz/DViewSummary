@@ -13,7 +13,8 @@ import com.sz.dzh.dviewsummary.base.BaseActivity;
 import com.sz.dzh.dviewsummary.bean.ClazzBean;
 import com.sz.dzh.dviewsummary.module.CardViewActivity;
 import com.sz.dzh.dviewsummary.module.ConstraintActivity;
-import com.sz.dzh.dviewsummary.module.TestActivity;
+import com.sz.dzh.dviewsummary.module.FABAndSnackBarActivity;
+import com.sz.dzh.dviewsummary.module.NavigationViewActivity;
 import com.sz.dzh.dviewsummary.module.ToolBarActivity;
 
 import java.util.ArrayList;
@@ -47,6 +48,8 @@ public class MainActivity extends BaseActivity {
         addClazzBean("ConstraintLayout", ConstraintActivity.class);
         addClazzBean("ToolBar", ToolBarActivity.class);
         addClazzBean("CardView、SwipeRefreshLayout", CardViewActivity.class);
+        addClazzBean("FloatingActionBtn", FABAndSnackBarActivity.class);
+        addClazzBean("NavigationView", NavigationViewActivity.class);
     }
 
     private void initView(){

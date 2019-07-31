@@ -21,6 +21,8 @@
         <activity android:name=".module.TestActivity" />
         <activity android:name=".module.ToolBarActivity" />
         <activity android:name=".module.CardViewActivity" />
+        <activity android:name=".module.FABAndSnackBarActivity" />
+        <activity android:name=".module.NavigationViewActivity" />
     </application>
 
 </manifest>

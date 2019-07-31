@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <!--
+    android:src：            FAB中显示的图标.
+    android:backgroundTint： 正常的背景颜色
+    app:rippleColor：        按下时的背景颜色
+    android:elevation：      正常的阴影大小
+    app:pressedTranslationZ：按下时的阴影大小
+    app:fabSize：            FAB的大小，normal或mini（分别对应56dp和40dp）
+    app:borderWidth：        边框大小，最好设置成0dp否则会有边框
+    app:layout_anchor：      设置FAB的锚点，即以哪个控件为参照设置位置
+    app:layout_anchorGravity：FAB相对于锚点的位置
+    -->
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_stars_black_24dp"
+        android:backgroundTint="@color/colorPrimary"
+        app:rippleColor="@color/colorAccent"
+        android:elevation="5dp"
+        app:pressedTranslationZ="10dp"
+        app:fabSize="normal"
+        app:borderWidth="5dp"
+        />
+
+
+</LinearLayout>
