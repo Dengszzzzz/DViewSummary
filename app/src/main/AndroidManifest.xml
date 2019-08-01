@@ -23,6 +23,14 @@
         <activity android:name=".module.CardViewActivity" />
         <activity android:name=".module.FABAndSnackBarActivity" />
         <activity android:name=".module.NavigationViewActivity" />
+        <activity android:name=".module.TextInputLtActivity" />
+        <activity android:name=".module.TabLayoutActivity" />
+        <activity android:name=".module.coordinator.AppBarLayoutActivity" />
+        <activity android:name=".module.coordinator.CoordinatorLayoutActivity" />
+        <activity android:name=".module.coordinator.AppBarLayoutActivity2" />
+        <activity android:name=".module.coordinator.AppBarLayoutActivity3" />
+        <activity android:name=".module.coordinator.AppBarLayoutActivity4" />
+        <activity android:name=".module.coordinator.AppBarLayoutActivity5" />
     </application>
 
 </manifest>

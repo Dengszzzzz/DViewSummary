@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/myTextView"
+                android:text="1、提示上移"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="请输入用户名"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                style="@style/myTextView"
+                android:layout_marginTop="15dp"
+                android:text="2、设置最大字符数及错误提示"/>
+
+            <!--
+            app:counterEnabled="true" //设置为true才能显字符数
+            app:counterMaxLength="5" //设置最大字符数为5
+            app:counterOverflowTextAppearance="@style/HintError" 设置超出字符数后提示文字的颜色，如果不设置默认为@color/colorAccent的颜色
+            -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="5" >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="请输入用户名"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                style="@style/myTextView"
+                android:text="3、设置错误提示文字"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintAnimationEnabled="true">
+                <EditText
+                    android:id="@+id/et_3"
+                    android:layout_width="match_parent"
+                    android:hint="输入@字符会提示错误"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                style="@style/myTextView"
+                android:text="4、设置密码是否可见"
+                android:layout_marginTop="15dp"/>
+
+            <!--
+             app:passwordToggleEnabled   设置密码是否可见,true可见
+             app:passwordToggleDrawable  设置密码icon
+            -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:hintAnimationEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                style="@style/myTextView"
+                android:text="5、box相关"
+                android:layout_marginTop="15dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/colorPrimary"
+                app:boxBackgroundMode="filled"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="请输入用户名"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/colorPrimary"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp">
+
+                <TextView
+                    style="@style/myTextView"
+                    android:text="哈哈哈"/>
+
+                <TextView
+                    style="@style/myTextView"
+                    android:text="哈哈哈"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="请输入用户名"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/colorPrimary"
+                app:boxBackgroundMode="none"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="请输入用户名"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

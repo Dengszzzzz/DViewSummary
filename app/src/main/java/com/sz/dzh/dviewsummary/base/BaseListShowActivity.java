@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.sz.dzh.dviewsummary.R;
@@ -28,6 +29,8 @@ public abstract class BaseListShowActivity extends BaseActivity {
 
     protected List<ClazzBean> mList = new ArrayList<>();
     protected BaseListAdapter mAdapter;
+    protected TextView mTvDesc;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,7 +42,8 @@ public abstract class BaseListShowActivity extends BaseActivity {
         initData();
     }
 
-    private void initView(){
+    private void initView() {
+        mTvDesc = findViewById(R.id.tv_desc);
         mAdapter = new BaseListAdapter(mList);
         mAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
@@ -54,11 +58,12 @@ public abstract class BaseListShowActivity extends BaseActivity {
 
 
     protected abstract void initUI();
+
     //子类给mList添加数据，再调用mAdapter.notifyDataSetChanged();
     protected abstract void initData();
 
-    protected void addClazzBean(String name, Class clazz){
-        mList.add(new ClazzBean(name,clazz));
+    protected void addClazzBean(String name, Class clazz) {
+        mList.add(new ClazzBean(name, clazz));
     }
 
 

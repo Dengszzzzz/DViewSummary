@@ -15,7 +15,10 @@ import com.sz.dzh.dviewsummary.module.CardViewActivity;
 import com.sz.dzh.dviewsummary.module.ConstraintActivity;
 import com.sz.dzh.dviewsummary.module.FABAndSnackBarActivity;
 import com.sz.dzh.dviewsummary.module.NavigationViewActivity;
+import com.sz.dzh.dviewsummary.module.TabLayoutActivity;
+import com.sz.dzh.dviewsummary.module.TextInputLtActivity;
 import com.sz.dzh.dviewsummary.module.ToolBarActivity;
+import com.sz.dzh.dviewsummary.module.coordinator.CoordinatorLayoutActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,6 +53,10 @@ public class MainActivity extends BaseActivity {
         addClazzBean("CardView、SwipeRefreshLayout", CardViewActivity.class);
         addClazzBean("FloatingActionBtn", FABAndSnackBarActivity.class);
         addClazzBean("NavigationView", NavigationViewActivity.class);
+        addClazzBean("TextInputLayout、TextInputEt", TextInputLtActivity.class);
+        addClazzBean("TabLayout", TabLayoutActivity.class);
+        addClazzBean("折叠布局", CoordinatorLayoutActivity.class);
+
     }
 
     private void initView(){
