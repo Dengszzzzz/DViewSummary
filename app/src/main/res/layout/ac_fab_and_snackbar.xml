@@ -17,7 +17,7 @@
     app:fabSize：            FAB的大小，normal或mini（分别对应56dp和40dp）
     app:borderWidth：        边框大小，最好设置成0dp否则会有边框
     app:layout_anchor：      设置FAB的锚点，即以哪个控件为参照设置位置
-    app:layout_anchorGravity：FAB相对于锚点的位置
+    app:layout_anchorGravity：FAB相对于锚点的位置,描点在CoordinatorLayout下成效
     -->
 
 

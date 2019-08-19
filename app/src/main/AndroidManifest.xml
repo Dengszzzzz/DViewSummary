@@ -31,6 +31,10 @@
         <activity android:name=".module.coordinator.AppBarLayoutActivity3" />
         <activity android:name=".module.coordinator.AppBarLayoutActivity4" />
         <activity android:name=".module.coordinator.AppBarLayoutActivity5" />
+        <activity android:name=".module.coordinator.CollapsingToolbarLayoutActivity" />
+        <activity android:name=".module.coordinator.CollapsingToolbarLayoutActivity2"/>
+        <activity android:name=".module.coordinator.CollapsingToolbarLayoutActivity3"
+            android:theme="@style/StatusBar_Transparent"/>
     </application>
 
 </manifest>

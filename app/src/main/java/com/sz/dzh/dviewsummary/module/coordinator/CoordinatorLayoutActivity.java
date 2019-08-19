@@ -1,5 +1,6 @@
 package com.sz.dzh.dviewsummary.module.coordinator;
 
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.view.View;
 
 import com.sz.dzh.dviewsummary.base.BaseListShowActivity;
@@ -29,8 +30,11 @@ public class CoordinatorLayoutActivity extends BaseListShowActivity {
         addClazzBean("AppBarLayout简单演示，scrollFlags设置为scroll", AppBarLayoutActivity.class);
         addClazzBean("scroll|enterAlways", AppBarLayoutActivity2.class);
         addClazzBean("scroll|exitUntilCollapsed", AppBarLayoutActivity3.class);
-        addClazzBean("scroll|enterAlwaysCollapsed", AppBarLayoutActivity4.class);
+        addClazzBean("scroll|enterAlways|enterAlwaysCollapsed", AppBarLayoutActivity4.class);
         addClazzBean("scroll|snap", AppBarLayoutActivity5.class);
+        addClazzBean("Collapsing 简单演示", CollapsingToolbarLayoutActivity.class);
+        addClazzBean("Collapsing 图片收缩，标题栏变色", CollapsingToolbarLayoutActivity2.class);
+        addClazzBean("Collapsing 图片收缩置顶，状态栏透明", CollapsingToolbarLayoutActivity3.class);
         mAdapter.notifyDataSetChanged();
     }
 }

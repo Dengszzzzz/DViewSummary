@@ -22,5 +22,6 @@ public class AppBarLayoutActivity5 extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ac_app_bar_layout5);
+       // initToolBar("scroll|snap");
     }
 }

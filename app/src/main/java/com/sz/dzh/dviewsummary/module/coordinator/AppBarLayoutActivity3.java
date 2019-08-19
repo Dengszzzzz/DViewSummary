@@ -30,5 +30,6 @@ public class AppBarLayoutActivity3 extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ac_app_bar_layout3);
+        //initToolBar("scroll|exitUntilCollapsed");
     }
 }
