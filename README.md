@@ -45,19 +45,24 @@ ToolBar  | 工具栏（标题栏），代替ActionBar，在appcompat-v7包中。
 
 ### 二、Android 5.0、6.0新增与View相关的功能
 1）View的高度和阴影
+   
    Z属性由elevation 和 translationZ组成。elevation表示view的高度，高度越大，阴影越大。transtionZ属性表示view在Z方向移动的距离，一般用于属性动画中。
    
 2）View的轮廓与裁剪   
+   
    View的阴影是由轮廓决定的，对轮廓的判定可以设置android:outlineProvider的值，裁剪是用View.setClipToOutline(true);
    
 3）Palette(调色板)
+   
    Palette使用，从一张图片中提取出关键的颜色，可以把该颜色值设置到别的控件上面。
     
 4）水波纹动画，自定义水波纹动画以及状态选择器动画
+   
    5.0以上，点击效果默认自带水波纹效果，可以自定义水波纹效果，状态选择器动画可以设置带属性动画的or帧动画的。
    
 5）如何动态替换theme？
-  在styles.xml设置多套布局，再在Activity的onCreateView()前调用setTheme。
+  
+   在styles.xml设置多套布局，再在Activity的onCreateView()前调用setTheme。
  
- <img src="https://github.com/Dengszzzzz/DViewSummary/blob/master/app/src/main/assets/1_4.jpg" width="280" />
+ <img src="https://github.com/Dengszzzzz/DViewSummary/blob/master/app/src/main/assets/2_1.jpg" width="280" />
 
