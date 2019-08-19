@@ -26,14 +26,13 @@ public class ThemeActivity extends BaseActivity {
 
     public static int mTheme = R.style.ThemeChange_A;
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(mTheme);
         setContentView(R.layout.ac_theme);
         ButterKnife.bind(this);
-        KLog.e("改变的Theme：" + mTheme);
+        initToolBar("动态改变Theme");
     }
 
     @OnClick(R.id.btn_change)

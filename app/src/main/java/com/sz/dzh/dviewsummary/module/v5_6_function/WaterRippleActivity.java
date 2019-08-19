@@ -48,6 +48,7 @@ public class WaterRippleActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ac_water_ripple);
         ButterKnife.bind(this);
+        initToolBar("View的水波纹，状态选择器动画");
     }
 
 
