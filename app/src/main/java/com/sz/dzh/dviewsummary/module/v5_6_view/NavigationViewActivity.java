@@ -1,4 +1,4 @@
-package com.sz.dzh.dviewsummary.module;
+package com.sz.dzh.dviewsummary.module.v5_6_view;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

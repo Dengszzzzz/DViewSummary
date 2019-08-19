@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.sz.dzh.dviewsummary">
+
+    <!--         普通权限           -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SENSOR_ENABLE" />
+    <!--targetSdkVersion>=28，前台服务需要此权限-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!--电源锁权限-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--接收开机广播的权限-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
 
     <application
         android:allowBackup="true"
@@ -9,7 +26,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,23 +36,29 @@
             </intent-filter>
         </activity>
         <activity android:name=".module.ConstraintActivity" />
-        <activity android:name=".module.TestActivity" />
-        <activity android:name=".module.ToolBarActivity" />
-        <activity android:name=".module.CardViewActivity" />
-        <activity android:name=".module.FABAndSnackBarActivity" />
-        <activity android:name=".module.NavigationViewActivity" />
-        <activity android:name=".module.TextInputLtActivity" />
-        <activity android:name=".module.TabLayoutActivity" />
-        <activity android:name=".module.coordinator.AppBarLayoutActivity" />
-        <activity android:name=".module.coordinator.CoordinatorLayoutActivity" />
-        <activity android:name=".module.coordinator.AppBarLayoutActivity2" />
-        <activity android:name=".module.coordinator.AppBarLayoutActivity3" />
-        <activity android:name=".module.coordinator.AppBarLayoutActivity4" />
-        <activity android:name=".module.coordinator.AppBarLayoutActivity5" />
-        <activity android:name=".module.coordinator.CollapsingToolbarLayoutActivity" />
-        <activity android:name=".module.coordinator.CollapsingToolbarLayoutActivity2"/>
-        <activity android:name=".module.coordinator.CollapsingToolbarLayoutActivity3"
+        <activity android:name=".module.v5_6_view.ToolBarActivity" />
+        <activity android:name=".module.v5_6_view.CardViewActivity" />
+        <activity android:name=".module.v5_6_view.FABAndSnackBarActivity" />
+        <activity android:name=".module.v5_6_view.NavigationViewActivity" />
+        <activity android:name=".module.v5_6_view.TextInputLtActivity" />
+        <activity android:name=".module.v5_6_view.TabLayoutActivity" />
+        <activity android:name=".module.v5_6_view.coordinator.AppBarLayoutActivity" />
+        <activity android:name=".module.v5_6_view.coordinator.CoordinatorLayoutActivity" />
+        <activity android:name=".module.v5_6_view.coordinator.AppBarLayoutActivity2" />
+        <activity android:name=".module.v5_6_view.coordinator.AppBarLayoutActivity3" />
+        <activity android:name=".module.v5_6_view.coordinator.AppBarLayoutActivity4" />
+        <activity android:name=".module.v5_6_view.coordinator.AppBarLayoutActivity5" />
+        <activity android:name=".module.v5_6_view.coordinator.CollapsingToolbarLayoutActivity" />
+        <activity android:name=".module.v5_6_view.coordinator.CollapsingToolbarLayoutActivity2"/>
+        <activity android:name=".module.v5_6_view.coordinator.CollapsingToolbarLayoutActivity3"
             android:theme="@style/StatusBar_Transparent"/>
+        <activity android:name=".module.v5_6_view.V5ViewListActivity" />
+        <activity android:name=".module.v5_6_function.V5FunctionListActivity" />
+        <activity android:name=".module.v5_6_function.ElevationActivity" />
+        <activity android:name=".module.v5_6_function.OutLineActivity" />
+        <activity android:name=".module.v5_6_function.PaletteActivity" />
+        <activity android:name=".module.v5_6_function.WaterRippleActivity" />
+        <activity android:name=".module.v5_6_function.ThemeActivity" />
     </application>
 
 </manifest>

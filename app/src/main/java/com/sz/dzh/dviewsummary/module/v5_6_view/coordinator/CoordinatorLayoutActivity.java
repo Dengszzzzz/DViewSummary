@@ -1,6 +1,5 @@
-package com.sz.dzh.dviewsummary.module.coordinator;
+package com.sz.dzh.dviewsummary.module.v5_6_view.coordinator;
 
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.view.View;
 
 import com.sz.dzh.dviewsummary.base.BaseListShowActivity;

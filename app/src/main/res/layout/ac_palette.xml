@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <ImageView
+        android:id="@+id/iv_sample"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@drawable/top_bg"/>
+
+    <TextView
+        android:id="@+id/tv_vibrantColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:text="VibrantColor"/>
+
+    <TextView
+        android:id="@+id/tv_mutedColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="MutedColor"/>
+
+    <TextView
+        android:id="@+id/tv_darkVibrantColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="DarkVibrantColor"/>
+
+    <TextView
+        android:id="@+id/tv_darkMutedColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="DarkMutedColor"/>
+
+    <TextView
+        android:id="@+id/tv_lightVibrantColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="LightVibrantColor"/>
+
+    <TextView
+        android:id="@+id/tv_lightMutedColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="LightMutedColor"/>
+
+</LinearLayout>

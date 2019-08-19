@@ -1,4 +1,4 @@
-package com.sz.dzh.dviewsummary.module.coordinator;
+package com.sz.dzh.dviewsummary.module.v5_6_view.coordinator;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

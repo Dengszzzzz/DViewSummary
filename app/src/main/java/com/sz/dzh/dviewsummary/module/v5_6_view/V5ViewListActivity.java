@@ -1,4 +1,4 @@
-package com.sz.dzh.dviewsummary;
+package com.sz.dzh.dviewsummary.module.v5_6_view;
 
 
 import android.os.Bundle;
@@ -6,13 +6,15 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.sz.dzh.dviewsummary.base.BaseListAdapter;
+import com.sz.dzh.dviewsummary.R;
 import com.sz.dzh.dviewsummary.base.BaseActivity;
+import com.sz.dzh.dviewsummary.base.BaseListAdapter;
 import com.sz.dzh.dviewsummary.bean.ClazzBean;
-import com.sz.dzh.dviewsummary.module.v5_6_function.V5FunctionListActivity;
-import com.sz.dzh.dviewsummary.module.v5_6_view.V5ViewListActivity;
+import com.sz.dzh.dviewsummary.module.ConstraintActivity;
+import com.sz.dzh.dviewsummary.module.v5_6_view.coordinator.CoordinatorLayoutActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,12 +24,14 @@ import butterknife.ButterKnife;
 
 
 /**
- *
+ * Android 5.0 6.0新增控件
  */
-public class MainActivity extends BaseActivity {
+public class V5ViewListActivity extends BaseActivity {
 
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
+    @BindView(R.id.tv_desc)
+    TextView tvDesc;
 
     protected List<ClazzBean> mList = new ArrayList<>();
     protected BaseListAdapter mAdapter;
@@ -41,13 +45,22 @@ public class MainActivity extends BaseActivity {
         initView();
     }
 
-    private void initData(){
-        addClazzBean("Android 5.0、6.0新增控件", V5ViewListActivity.class);
-        addClazzBean("Android 5.0、6.0新增功能（与View相关）", V5FunctionListActivity.class);
+    private void initData() {
+
+        addClazzBean("ConstraintLayout", ConstraintActivity.class);
+        addClazzBean("ToolBar", ToolBarActivity.class);
+        addClazzBean("CardView、SwipeRefreshLayout", CardViewActivity.class);
+        addClazzBean("FloatingActionBtn", FABAndSnackBarActivity.class);
+        addClazzBean("NavigationView", NavigationViewActivity.class);
+        addClazzBean("TextInputLayout、TextInputEt", TextInputLtActivity.class);
+        addClazzBean("TabLayout", TabLayoutActivity.class);
+        addClazzBean("折叠布局", CoordinatorLayoutActivity.class);
 
     }
 
-    private void initView(){
+    private void initView() {
+        tvDesc.setText("Android 5.0、6.0新增控件");
+
         mAdapter = new BaseListAdapter(mList);
         mAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
@@ -61,9 +74,8 @@ public class MainActivity extends BaseActivity {
     }
 
 
-
-    protected void addClazzBean(String name, Class clazz){
-        mList.add(new ClazzBean(name,clazz));
+    protected void addClazzBean(String name, Class clazz) {
+        mList.add(new ClazzBean(name, clazz));
     }
 
 }

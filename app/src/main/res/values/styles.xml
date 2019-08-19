@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--状态栏透明色-->
     <style name="StatusBar_Transparent" parent="AppTheme">
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
@@ -58,6 +59,29 @@
     <!--  *********************       ToolBar相关     *************************   -->
 
 
+    <!--  *********************       动态替换Theme     *************************   -->
+    <style name="ThemeChange_A" parent="AppTheme">
+        <!--状态栏颜色-->
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--ActionBar颜色-->
+        <item name="android:colorPrimary">@color/colorPrimaryDark</item>
+        <!--界面背景颜色-->
+        <item name="android:windowBackground">@color/main_bg</item>
+        <!--导航栏颜色-->
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ThemeChange_B" parent="AppTheme">
+        <!--状态栏颜色-->
+        <item name="android:colorPrimaryDark">@color/colorAccent</item>
+        <!--ActionBar颜色-->
+        <item name="android:colorPrimary">@color/colorAccent</item>
+        <!--界面背景颜色-->
+        <item name="android:windowBackground">@color/text_color_black</item>
+        <!--导航栏颜色-->
+        <item name="android:navigationBarColor">@color/colorAccent</item>
+    </style>
+    <!--  *********************       动态替换Theme     *************************   -->
 
     <style name="myTextView">
         <item name="android:layout_width">wrap_content</item>
