@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="使用预置"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加大" />
+
+            <Button
+                android:id="@+id/btn_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="缩小" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--
+                app:autoSizeTextType="uniform"   取值none（默认，表示不自动缩放）、uniform（横、纵缩放）。
+                app:autoSizeMinTextSize="20sp"
+                app:autoSizeMaxTextSize="80sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizePresetSizes="@array/preset_sizes"
+            -->
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_auto"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="Hello Test"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="20sp"
+                app:autoSizeMaxTextSize="80sp"
+                app:autoSizeStepGranularity="2sp" />
+
+            <TextView
+                android:id="@+id/tv_auto_preset"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="Hello Test"
+                app:autoSizeTextType="uniform"
+                app:autoSizePresetSizes="@array/preset_sizes"/>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

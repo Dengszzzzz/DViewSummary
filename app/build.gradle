@@ -46,6 +46,8 @@ dependencies {
     implementation 'com.github.zhaokaiqiang.klog:library:1.6.0'
     //圖片框架
     implementation 'com.github.bumptech.glide:glide:4.8.0'
+    //视频播放器
+    implementation 'cn.jzvd:jiaozivideoplayer:7.0.5'
 
 
 

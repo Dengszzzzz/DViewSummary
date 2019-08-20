@@ -27,13 +27,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:resizeableActivity="false"
         tools:ignore="GoogleAppIndexingWarning">
+
+        <!--预期声明可下载的字体-->
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts" />
+
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <!--android 7.0 支持的长按app弹出快捷方式  配置-->
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+
         </activity>
         <activity android:name=".module.ConstraintActivity" />
         <activity android:name=".module.v5_6_view.ToolBarActivity" />
@@ -59,6 +71,17 @@
         <activity android:name=".module.v5_6_function.PaletteActivity" />
         <activity android:name=".module.v5_6_function.WaterRippleActivity" />
         <activity android:name=".module.v5_6_function.ThemeActivity" />
+        <activity android:name=".module.v7_function.V7FunctionListActivity" />
+        <activity android:name=".module.v7_function.ResizeableActivity"
+            android:configChanges="orientation|screenLayout"
+            />
+        <activity android:name=".module.v8_function.V8FunctionListActivity" />
+        <activity android:name=".module.v8_function.PipActivity"
+            android:supportsPictureInPicture="true"
+            android:configChanges="orientation|screenLayout"/>
+        <activity android:name=".module.v8_function.FontActivity" />
+        <activity android:name=".module.v8_function.AutosizingTvActivity" />
+
     </application>
 
 </manifest>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <TextView
+            style="@style/myTextView"
+            android:text="1、8.0之前的方式  添加自定义字体" />
+
+        <TextView
+            android:id="@+id/tv_old"
+            style="@style/myTextView"
+            android:text="苏新诗卵石体" />
+
+        <TextView
+            style="@style/myTextView"
+            android:layout_marginTop="50dp"
+            android:text="2、8.0 字体新特性" />
+        <TextView
+            style="@style/myTextView"
+            android:fontFamily="sans"
+            android:text="Android 8.0 自定义字体，下载字体" />
+
+        <TextView
+            style="@style/myTextView"
+            android:fontFamily="monospace"
+            android:text="Android 8.0 自定义字体，下载字体" />
+
+        <TextView
+            style="@style/myTextView"
+            android:fontFamily="@font/yellowtail"
+            android:text="Android 8.0 自定义字体，下载字体" />
+
+        <TextView
+            style="@style/myTextView"
+            android:fontFamily="@font/akronim"
+            android:text="Android 8.0 自定义字体，下载字体" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

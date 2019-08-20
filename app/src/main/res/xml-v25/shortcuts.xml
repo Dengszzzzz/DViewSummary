@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts  xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <shortcut
+        android:shortcutId="v5_6_function"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/short_label_5"
+        android:shortcutLongLabel="@string/long_label_5"
+        android:shortcutDisabledMessage="@string/disable_msg_5">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.sz.dzh.dviewsummary"
+            android:targetClass="com.sz.dzh.dviewsummary.module.v5_6_function.V5FunctionListActivity" />
+
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="v8_function"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/short_label_8"
+        android:shortcutLongLabel="@string/long_label_8"
+        android:shortcutDisabledMessage="@string/disable_msg_8">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.sz.dzh.dviewsummary"
+            android:targetClass="com.sz.dzh.dviewsummary.module.v8_function.V8FunctionListActivity" />
+
+    </shortcut>
+
+
+</shortcuts >
