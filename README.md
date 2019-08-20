@@ -65,4 +65,28 @@ ToolBar  | 工具栏（标题栏），代替ActionBar，在appcompat-v7包中。
    在styles.xml设置多套布局，再在Activity的onCreateView()前调用setTheme。
  
  <img src="https://github.com/Dengszzzzz/DViewSummary/blob/master/app/src/main/assets/2_1.jpg" width="280" />
+ 
+ ### 三、Android 7.0、8.0、9.0整理
+ 
+ **Android 7.0（N）**
+ 
+1.多窗口支持（分屏模式）
+
+2.桌面长按图标出现快捷方式
+
+**Android 8.0（O）**
+
+1.画中画模式（PIP，其实就像是分屏模式的优化版）
+
+2.自定义字体，可下载字体（AS 3.x以上可以找到，但没有中文字体可下载）。
+
+3.自动缩放文本视图（Autosizing TextView）
+
+**Android 9.0(P)**
+
+1.刘海屏适配。
+
+2.ImageDecoder 和 AnimagedImageDrawable。
+
+ 
 
