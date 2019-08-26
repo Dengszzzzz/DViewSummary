@@ -41,12 +41,7 @@ public abstract class OnLoadMoreListener extends RecyclerView.OnScrollListener{
             Log.d("test","其它");
         }*/
         //拖拽或者惯性滑动时isScolled设置为true
-        if (newState == SCROLL_STATE_DRAGGING || newState == SCROLL_STATE_SETTLING) {
-            isScolled = true;
-        } else {
-            isScolled = false;
-        }
-
+        isScolled = newState == SCROLL_STATE_DRAGGING || newState == SCROLL_STATE_SETTLING;
     }
 
     @Override

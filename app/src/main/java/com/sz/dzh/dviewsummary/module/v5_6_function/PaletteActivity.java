@@ -60,12 +60,7 @@ public class PaletteActivity extends BaseActivity {
 
     private void init() {
         mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.top_bg, null);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                handlePalette();
-            }
-        },2000);
+        new Handler().postDelayed(() -> handlePalette(),2000);
     }
 
     private void handlePalette() {
