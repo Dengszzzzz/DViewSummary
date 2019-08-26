@@ -1,5 +1,7 @@
 # DViewSummary
 [Android 5.0、6.0新增控件学习整理](https://www.jianshu.com/p/e627c31961c3)  
+
+2019/8/26修改，已将support包替换成andriodx。
    
 ### 一、Android 5.0、6.0新增控件学习整理
 
