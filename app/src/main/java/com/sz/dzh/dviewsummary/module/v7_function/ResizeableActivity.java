@@ -1,7 +1,7 @@
 package com.sz.dzh.dviewsummary.module.v7_function;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.socks.library.KLog;
 import com.sz.dzh.dviewsummary.R;

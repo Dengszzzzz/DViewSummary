@@ -1,10 +1,10 @@
 package com.sz.dzh.dviewsummary.utils.recyclerView;
 
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import static android.support.v7.widget.RecyclerView.SCROLL_STATE_DRAGGING;
-import static android.support.v7.widget.RecyclerView.SCROLL_STATE_SETTLING;
+import static androidx.recyclerview.widget.RecyclerView.SCROLL_STATE_DRAGGING;
+import static androidx.recyclerview.widget.RecyclerView.SCROLL_STATE_SETTLING;
 
 /**
  * 用RecyclerView 的 滚动做上拉加载判断

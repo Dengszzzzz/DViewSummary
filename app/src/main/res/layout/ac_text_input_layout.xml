@@ -8,7 +8,7 @@
     <include
         layout="@layout/toolbar"/>
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -22,14 +22,14 @@
                 style="@style/myTextView"
                 android:text="1、提示上移"/>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
                     android:layout_width="match_parent"
                     android:hint="请输入用户名"
                     android:layout_height="wrap_content" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 style="@style/myTextView"
@@ -41,7 +41,7 @@
             app:counterMaxLength="5" //设置最大字符数为5
             app:counterOverflowTextAppearance="@style/HintError" 设置超出字符数后提示文字的颜色，如果不设置默认为@color/colorAccent的颜色
             -->
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:counterEnabled="true"
@@ -50,13 +50,13 @@
                     android:layout_width="match_parent"
                     android:hint="请输入用户名"
                     android:layout_height="wrap_content" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 style="@style/myTextView"
                 android:text="3、设置错误提示文字"/>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
                     android:layout_width="match_parent"
                     android:hint="输入@字符会提示错误"
                     android:layout_height="wrap_content" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 style="@style/myTextView"
@@ -77,7 +77,7 @@
              app:passwordToggleEnabled   设置密码是否可见,true可见
              app:passwordToggleDrawable  设置密码icon
             -->
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -91,14 +91,14 @@
                     android:hint="请输入密码"
                     android:inputType="textPassword" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 style="@style/myTextView"
                 android:text="5、box相关"
                 android:layout_marginTop="15dp"/>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:boxBackgroundColor="@color/colorPrimary"
@@ -109,9 +109,9 @@
                     android:layout_width="match_parent"
                     android:hint="请输入用户名"
                     android:layout_height="wrap_content" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:boxBackgroundColor="@color/colorPrimary"
@@ -132,9 +132,9 @@
                     android:hint="请输入用户名"
                     android:layout_height="wrap_content" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:boxBackgroundColor="@color/colorPrimary"
@@ -146,11 +146,11 @@
                     android:layout_width="match_parent"
                     android:hint="请输入用户名"
                     android:layout_height="wrap_content" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
 
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 
 </LinearLayout>

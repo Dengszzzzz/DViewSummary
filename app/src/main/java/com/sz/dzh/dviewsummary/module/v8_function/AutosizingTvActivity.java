@@ -1,7 +1,7 @@
 package com.sz.dzh.dviewsummary.module.v8_function;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;

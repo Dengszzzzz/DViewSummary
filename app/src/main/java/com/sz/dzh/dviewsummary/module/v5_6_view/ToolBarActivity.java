@@ -1,7 +1,7 @@
 package com.sz.dzh.dviewsummary.module.v5_6_view;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.widget.Toolbar;
 
 import com.sz.dzh.dviewsummary.R;
@@ -29,9 +29,9 @@ public class ToolBarActivity extends BaseActivity {
     @BindView(R.id.toolbar3)
     Toolbar mToolbar3;
     @BindView(R.id.toolbar4)
-    android.support.v7.widget.Toolbar mToolbar4;
+    androidx.appcompat.widget.Toolbar mToolbar4;
     @BindView(R.id.toolbar5)
-    android.support.v7.widget.Toolbar mToolbar5;
+    androidx.appcompat.widget.Toolbar mToolbar5;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -2,7 +2,7 @@ package com.sz.dzh.dviewsummary.module.v5_6_function;
 
 import android.graphics.Outline;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.view.ViewOutlineProvider;
 import android.widget.ImageView;

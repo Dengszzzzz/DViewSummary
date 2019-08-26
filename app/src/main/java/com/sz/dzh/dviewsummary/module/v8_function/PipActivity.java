@@ -4,11 +4,13 @@ import android.app.PictureInPictureParams;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
 import android.util.Rational;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 
 import com.bumptech.glide.Glide;
 import com.socks.library.KLog;
@@ -33,6 +35,8 @@ public class PipActivity extends BaseActivity {
     Button btnPip;
     @BindView(R.id.jz_video)
     JzvdStd jzVideo;
+    @BindView(R.id.ll_control)
+    LinearLayout llControl;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,7 +48,7 @@ public class PipActivity extends BaseActivity {
         init();
     }
 
-    private void init(){
+    private void init() {
         jzVideo.setUp("http://jzvd.nathen.cn/342a5f7ef6124a4a8faf00e738b8bee4/cf6d9db0bd4d41f59d09ea0a81e918fd-5287d2089db37e62345123a1be272f8b.mp4"
                 , "饺子闭眼睛");
         Glide.with(this).load("http://jzvd-pic.nathen.cn/jzvd-pic/1bb2ebbe-140d-4e2e-abd2-9e7e564f71ac.png").into(jzVideo.thumbImageView);
@@ -80,11 +84,13 @@ public class PipActivity extends BaseActivity {
     public void onPictureInPictureModeChanged(boolean isInPictureInPictureMode, Configuration newConfig) {
         super.onPictureInPictureModeChanged(isInPictureInPictureMode, newConfig);
         KLog.e(TAG, "onPictureInPictureModeChanged()");
-       /* if(isInPictureInPictureMode){
-            btnPip.setVisibility(View.GONE);
-        }else{
-            btnPip.setVisibility(View.VISIBLE);
-        }*/
+        if (isInPictureInPictureMode) {
+            llControl.setVisibility(View.GONE);
+            mToolbar.setVisibility(View.GONE);
+        } else {
+            llControl.setVisibility(View.VISIBLE);
+            mToolbar.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override

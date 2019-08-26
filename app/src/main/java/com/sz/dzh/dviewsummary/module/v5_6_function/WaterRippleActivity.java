@@ -3,7 +3,7 @@ package com.sz.dzh.dviewsummary.module.v5_6_function;
 import android.animation.Animator;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.widget.Button;

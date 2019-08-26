@@ -19,6 +19,13 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
 
+    <!--
+      1)android:resizeableActivity="false"
+      设置是否支持7.0提供的分屏模式，默认为true，支持。
+
+      2）android:usesCleartextTraffic="true"
+      Android9.0 默认是禁止所有的http请求的，需要在代码中设置如下代码才可以正常进行网络请求。
+    -->
     <application
         android:allowBackup="true"
         android:name=".base.App"
@@ -27,7 +34,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:resizeableActivity="false"
+        android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
 
         <!--预期声明可下载的字体-->
@@ -73,12 +80,12 @@
         <activity android:name=".module.v5_6_function.ThemeActivity" />
         <activity android:name=".module.v7_function.V7FunctionListActivity" />
         <activity android:name=".module.v7_function.ResizeableActivity"
-            android:configChanges="orientation|screenLayout"
+            android:configChanges="orientation|screenLayout|screenSize"
             />
         <activity android:name=".module.v8_function.V8FunctionListActivity" />
         <activity android:name=".module.v8_function.PipActivity"
             android:supportsPictureInPicture="true"
-            android:configChanges="orientation|screenLayout"/>
+            android:configChanges="orientation|screenLayout|screenSize"/>
         <activity android:name=".module.v8_function.FontActivity" />
         <activity android:name=".module.v8_function.AutosizingTvActivity" />
 

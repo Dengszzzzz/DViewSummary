@@ -53,7 +53,7 @@
                 app:autoSizePresetSizes="@array/preset_sizes"
             -->
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_auto"
                 android:layout_width="60dp"
                 android:layout_height="30dp"

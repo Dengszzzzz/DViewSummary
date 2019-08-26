@@ -2,9 +2,10 @@ package com.sz.dzh.dviewsummary.module.v5_6_function;
 
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
@@ -13,14 +14,6 @@ import com.sz.dzh.dviewsummary.R;
 import com.sz.dzh.dviewsummary.base.BaseActivity;
 import com.sz.dzh.dviewsummary.base.BaseListAdapter;
 import com.sz.dzh.dviewsummary.bean.ClazzBean;
-import com.sz.dzh.dviewsummary.module.ConstraintActivity;
-import com.sz.dzh.dviewsummary.module.v5_6_view.CardViewActivity;
-import com.sz.dzh.dviewsummary.module.v5_6_view.FABAndSnackBarActivity;
-import com.sz.dzh.dviewsummary.module.v5_6_view.NavigationViewActivity;
-import com.sz.dzh.dviewsummary.module.v5_6_view.TabLayoutActivity;
-import com.sz.dzh.dviewsummary.module.v5_6_view.TextInputLtActivity;
-import com.sz.dzh.dviewsummary.module.v5_6_view.ToolBarActivity;
-import com.sz.dzh.dviewsummary.module.v5_6_view.coordinator.CoordinatorLayoutActivity;
 
 import java.util.ArrayList;
 import java.util.List;

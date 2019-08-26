@@ -1,8 +1,9 @@
 package com.sz.dzh.dviewsummary.module.v5_6_view.coordinator;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+
 
 import com.sz.dzh.dviewsummary.R;
 import com.sz.dzh.dviewsummary.base.BaseActivity;

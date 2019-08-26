@@ -12,7 +12,7 @@
         android:id="@+id/iv_sample"
         android:layout_width="match_parent"
         android:layout_height="225dp"
-        android:background="@drawable/top_bg"/>
+        android:src="@drawable/top_bg"/>
 
     <TextView
         android:id="@+id/tv_vibrantColor"
