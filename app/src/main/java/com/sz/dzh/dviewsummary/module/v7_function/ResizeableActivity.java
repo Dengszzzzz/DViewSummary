@@ -10,6 +10,8 @@ import com.sz.dzh.dviewsummary.base.BaseActivity;
 /**
  * Created by dengzh on 2019/8/20
  * Android 7.0 分屏模式
+ * 
+ * 进入分屏模式，不销毁重建，需在设置 android:configChanges="orientation|screenLayout|screenSize"
  */
 public class ResizeableActivity extends BaseActivity {
 

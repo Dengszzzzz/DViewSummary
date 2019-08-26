@@ -26,6 +26,9 @@ import cn.jzvd.JzvdStd;
 /**
  * Created by dengzh on 2019/8/20
  * Android 8.0 画中画
+ *
+ * 进入PIP模式，不销毁重建，需在设置 android:configChanges="orientation|screenLayout|screenSize"
+ *
  */
 public class PipActivity extends BaseActivity {
 
