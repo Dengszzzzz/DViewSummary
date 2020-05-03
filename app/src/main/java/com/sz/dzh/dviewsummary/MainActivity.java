@@ -11,6 +11,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.sz.dzh.dviewsummary.base.BaseListAdapter;
 import com.sz.dzh.dviewsummary.base.BaseActivity;
 import com.sz.dzh.dviewsummary.bean.ClazzBean;
+import com.sz.dzh.dviewsummary.module.custom.CustomViewListActivity;
 import com.sz.dzh.dviewsummary.module.v5_6_function.V5FunctionListActivity;
 import com.sz.dzh.dviewsummary.module.v5_6_view.V5ViewListActivity;
 import com.sz.dzh.dviewsummary.module.v7_function.V7FunctionListActivity;
@@ -48,6 +49,7 @@ public class MainActivity extends BaseActivity {
         addClazzBean("Android 5.0、6.0新增功能（与View相关）", V5FunctionListActivity.class);
         addClazzBean("Android 7.0 特性", V7FunctionListActivity.class);
         addClazzBean("Android 8.0 特性", V8FunctionListActivity.class);
+        addClazzBean("自定义View", CustomViewListActivity.class);
     }
 
     private void initView(){

@@ -88,6 +88,10 @@
             android:configChanges="orientation|screenLayout|screenSize"/>
         <activity android:name=".module.v8_function.FontActivity" />
         <activity android:name=".module.v8_function.AutosizingTvActivity" />
+        <activity android:name=".module.custom.BigImageActivity" />
+        <activity android:name=".module.custom.CustomViewListActivity" />
+        <activity android:name=".module.custom.NiceImageActivity" />
+        <activity android:name=".module.custom.MyViewActivity" />
 
     </application>
 

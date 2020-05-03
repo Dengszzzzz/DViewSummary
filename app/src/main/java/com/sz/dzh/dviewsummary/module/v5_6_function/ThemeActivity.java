@@ -2,9 +2,9 @@ package com.sz.dzh.dviewsummary.module.v5_6_function;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import androidx.annotation.Nullable;
 
-import com.socks.library.KLog;
 import com.sz.dzh.dviewsummary.R;
 import com.sz.dzh.dviewsummary.base.BaseActivity;
 

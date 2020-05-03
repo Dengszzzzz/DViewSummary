@@ -51,7 +51,8 @@ dependencies {
     implementation 'com.github.zhaokaiqiang.klog:library:1.6.0'
     //视频播放器
     implementation 'cn.jzvd:jiaozivideoplayer:7.0.5'
-
+    //长图加载
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
 
 
 }
