@@ -34,6 +34,8 @@ public class CoordinatorLayoutActivity extends BaseListShowActivity {
         addClazzBean("Collapsing 简单演示", CollapsingToolbarLayoutActivity.class);
         addClazzBean("Collapsing 图片收缩，标题栏变色", CollapsingToolbarLayoutActivity2.class);
         addClazzBean("Collapsing 图片收缩置顶，状态栏透明", CollapsingToolbarLayoutActivity3.class);
+        addClazzBean("Collapsing 实战1", CollapsingToolbarLayoutActivity4.class);
+
         mAdapter.notifyDataSetChanged();
     }
 }

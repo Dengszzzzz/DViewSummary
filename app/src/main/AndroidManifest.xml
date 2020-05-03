@@ -92,6 +92,7 @@
         <activity android:name=".module.custom.CustomViewListActivity" />
         <activity android:name=".module.custom.NiceImageActivity" />
         <activity android:name=".module.custom.MyViewActivity" />
+        <activity android:name=".module.v5_6_view.coordinator.CollapsingToolbarLayoutActivity4" />
 
     </application>
 
